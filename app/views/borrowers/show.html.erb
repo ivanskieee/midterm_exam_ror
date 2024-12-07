@@ -1,0 +1,15 @@
+<div class="container p-6 mx-auto">
+  <h1 class="text-4xl font-bold text-center text-gray-800 mb-6">Borrower: <%= @borrower.name %></h1>
+            <br>
+            <div class="mt-6">
+              <ul class="space-y-2">
+                <li>
+                  <%= link_to "Edit", edit_borrower_path(@borrower), class: "text-yellow-500 hover:underline" %>
+                </li>
+                <li>
+                  <%= link_to "Destroy", borrower_path(@borrower), data: { turbo_method: :delete, turbo_confirm: "Are you sure?" }, class: "text-red-500 hover:underline" %>
+                </li>
+              </ul>
+            </div>
+</div>
+
